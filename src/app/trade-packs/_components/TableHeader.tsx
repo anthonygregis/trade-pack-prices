@@ -13,7 +13,7 @@ export function TableHeader({ column, sortState, onSort }: TableHeaderProps) {
   return (
     <th
       scope="col"
-      className="group cursor-pointer select-none whitespace-nowrap px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-text-secondary transition-colors hover:text-accent-gold"
+      className="sticky top-0 z-10 group cursor-pointer select-none whitespace-nowrap bg-bg-secondary px-4 py-3 text-left text-xs font-semibold uppercase tracking-wider text-text-secondary transition-colors hover:text-accent-gold"
       onClick={() => onSort(column.key)}
       aria-sort={isActive ? (sortState.direction === 'asc' ? 'ascending' : 'descending') : 'none'}
     >

@@ -42,7 +42,7 @@ export function TradePackTable({ data }: TradePackTableProps) {
         filteredCount={filteredData.length}
       />
 
-      <div className="overflow-x-auto rounded-xl border border-border-primary bg-bg-card">
+      <div className="max-h-[calc(100vh-16rem)] overflow-auto rounded-xl border border-border-primary bg-bg-card">
         <table className="w-full min-w-[640px]">
           <thead className="border-b border-border-primary bg-bg-secondary">
             <tr>
